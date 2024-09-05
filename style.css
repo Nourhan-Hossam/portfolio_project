@@ -1,0 +1,79 @@
+
+/* rest css*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* style the body --> background*/
+
+body{
+    height:100vh;
+    background-image:url(./background.jpg) ;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style container*/
+
+.container{
+    width: 80%;
+    height: 500px;
+    padding: 20px;
+    background-image:linear-gradient(to right,#72a0c1,transparent);
+    text-align: center;
+    transition: 2s;
+
+}
+
+/* style the h1 of project*/
+
+.container h1{
+    color: white;
+    padding: 20px;
+}
+
+.container input{
+    width: 50%;
+    padding: 10px;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    border: 1px solid #72a0c1;
+    border-radius: 6px;
+    color: black;
+    background-image: linear-gradient(to left,#72a0c1,transparent);
+    outline: none;
+    transition: 2s;
+}
+.container button{
+    width: 20%;
+    padding: 10px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#72a0c1,transparent,#498bcd);
+    border: none;
+    outline: none;
+    transition: 2s;
+}
+
+/*hover actions on container and input and button*/
+.container:hover{
+    background-image:linear-gradient(to left,#72a0c1,transparent);
+}
+
+.container input:hover{
+    background-image:linear-gradient(to right,#72a0c1,transparent);
+}
+
+.container button:hover{
+    background-image: linear-gradient(#72a0c1,#498bcd);
+    cursor: pointer;
+
+}
