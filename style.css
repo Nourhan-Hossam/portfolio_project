@@ -1,4 +1,3 @@
-
 /* rest css*/
 
 *{
@@ -23,7 +22,7 @@ body{
 
 /* style container*/
 
-.container{
+.card{
     width: 80%;
     height: 500px;
     padding: 20px;
@@ -35,24 +34,25 @@ body{
 
 /* style the h1 of project*/
 
-.container h1{
+.card h2{
     color: white;
     padding: 20px;
 }
 
-.container input{
+.card input{
     width: 50%;
     padding: 10px;
     flex-grow: 1;
     flex-wrap: nowrap;
     border: 1px solid #72a0c1;
     border-radius: 6px;
-    color: black;
+    color: #498bcd;
+    font-weight: bolder;
     background-image: linear-gradient(to left,#72a0c1,transparent);
     outline: none;
     transition: 2s;
 }
-.container button{
+.card button{
     width: 20%;
     padding: 10px;
     flex-grow: 1;
@@ -61,19 +61,31 @@ body{
     border: none;
     outline: none;
     transition: 2s;
+    font-weight: bolder;
+    color: #498bcd;
 }
 
 /*hover actions on container and input and button*/
-.container:hover{
+.card:hover{
     background-image:linear-gradient(to left,#72a0c1,transparent);
 }
 
-.container input:hover{
+.card input:hover{
     background-image:linear-gradient(to right,#72a0c1,transparent);
 }
 
-.container button:hover{
+.card button:hover{
     background-image: linear-gradient(#72a0c1,#498bcd);
     cursor: pointer;
+    color: white;
+
+}
+
+
+
+.card .weather{
+    color: white ;
+  font-size: 20px;
+ font-weight: bolder;
 
 }

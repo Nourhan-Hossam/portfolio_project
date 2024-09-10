@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <!-- do container include all information website-->
-    <div class="container">
-        <!-- title-->
-        <h1> weather app</h1>
-        <!-- the div we will use to search about countery weather-->
-        <div class="search">
-            <input type="text" placeholder="new yurk">
-            <button> search </button>
-        </div>
-        <!-- the information about countery weather (api)-->
-        <div class="contain"></div>
-    </div>
+   
 
+    <div class="card">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Search...">
+          <button> Get Weather </button>
+        </div>
+        <div class="weather loading">
+          <h2 class="city">Weather in Athone</h2>
+          <h1 class="temp">--</h1>
+          <div class="flex">
+            <img src="images/weather.png" alt="" class="icon" />
+            <div class="description">Cloudy</div>
+          </div>
+          <div class="humidity">Humidity: 60%</div>
+          <div class="wind">Wind speed: 6.2 km/h</div>
+        </div>
+      </div>
+    
+
+
+    <script src="script.js"></script>
 </body>
 </html>
