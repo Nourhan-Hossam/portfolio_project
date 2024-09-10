@@ -49,4 +49,4 @@ let weather = {
       }
     });
   
-  weather.fetchWeather("Athlone");
+  weather.fetchWeather("Egypt");
